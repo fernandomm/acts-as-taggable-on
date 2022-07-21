@@ -1,5 +1,5 @@
 module ActsAsTaggableOn
-  class Tagging < ::ActiveRecord::Base #:nodoc:
+  class Tagging < ActsAsTaggableOn.base_class # :nodoc:
     self.table_name = ActsAsTaggableOn.taggings_table
 
     DEFAULT_CONTEXT = 'tags'
